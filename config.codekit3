@@ -31,6 +31,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/img\/start.png": {
+		"ft": 32768,
+		"iS": 58113,
+		"oA": 0,
+		"oAP": "\/img\/start.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -42,9 +53,9 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/js\/alien-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 0,
 		"tS": 0
 		},
@@ -52,9 +63,9 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/js\/bullet-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 0,
 		"tS": 0
 		},
@@ -62,9 +73,9 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/js\/ship-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 0,
 		"tS": 0
 		},
