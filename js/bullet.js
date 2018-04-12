@@ -14,7 +14,7 @@ function Bullet() {
         var d = dist(this.x, this.y, alien.x, alien.y);
         if (d < this.r + alien.r) {
             score += 1;
-            if(score > highScore){
+            if (score > highScore) {
                 highScore = score;
             }
             return true;
