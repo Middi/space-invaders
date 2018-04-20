@@ -2,12 +2,13 @@ var ship;
 var aliens = [];
 var bullets = [];
 var score = 0;
-let start = true;
+var start = true;
 var bg;
-let blinkingMenu = true;
+var blinkingMenu = true;
 var dead = false;
-let gamestart = false;
+var gamestart = false;
 var highScore = 0;
+var playAgain = false;
 
 
 function preload() {
@@ -24,8 +25,6 @@ function setup() {
     cnv.position(x, y);
     ship = new Ship();
     alienArray();
-    var button = createButton('Play Again');
-    button.mousePressed(reset);
 }
 
 function draw() {
@@ -167,11 +166,19 @@ function endScreen() {
     fill(255);
     textAlign(CENTER, CENTER);
     if (!aliens.length) {
-        text('YOU WIN!', width / 2, height / 2);
-    }
+        playAgain = true;
+        text('YOU WIN!', width / 2, height / 3);textSize(30);
+        textStyle(NORMAL);
+        text('Click To Restart', width / 2, height / 1.7);
+}
     else if (dead) {
-        text('YOU LOSE!', width / 2, height / 2);
+        playAgain = true;
+        text('YOU LOSE!', width / 2, height / 3);
+        textSize(30);
+        textStyle(NORMAL);
+        text('Click To Restart', width / 2, height / 1.7);
     }
+    
 }
 
 function reset() {
@@ -217,5 +224,12 @@ function keyReleased() {
 function startGame() {
     if (gamestart) {
         start = false;
+    }
+}
+
+function mousePressed() {
+    if(playAgain){
+        reset();
+        playAgain = false;
     }
 }
